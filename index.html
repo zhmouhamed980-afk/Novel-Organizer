@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='ar' dir='rtl'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>تطبيق تنظيم الرواية - Novel Organizer</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <header>
+        <h1>تطبيق تنظيم الرواية</h1>
+    </header>
+
+    <main>
+        <!-- Library View: Displays all novels as cards -->
+        <section id='library-view' class='view active'>
+            <h2>مكتبتي</h2>
+            <div id='novels-grid'>
+                <!-- Novel cards will be injected here by JavaScript -->
+            </div>
+            <button id='add-novel-btn'>+ إضافة رواية جديدة</button>
+        </section>
+
+        <!-- Editor View: Form to add/edit a novel and its chapters -->
+        <section id='editor-view' class='view'>
+            <!-- Novel details form, chapters list, etc. -->
+            <h2>محرر الرواية</h2>
+            <form id='novel-form'>
+                <!-- Novel form fields will be here -->
+            </form>
+            <button id='back-to-library-btn'>العودة للمكتبة</button>
+        </section>
+
+        <!-- Reader View: Displays a chapter for reading -->
+        <section id='reader-view' class='view'>
+            <!-- Novel content, chapter navigation, etc. -->
+            <h2>قارئ الرواية</h2>
+            <div id='reader-content'></div>
+            <button id='close-reader-btn'>إغلاق القارئ</button>
+        </section>
+    </main>
+
+    <script src='script.js'></script>
+</body>
+</html>
